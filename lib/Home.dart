@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
 import "defaults.dart";
+import "map.dart";
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -13,8 +14,9 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawerEdgeDragWidth: MediaQuery.of(context).size.width,
       appBar: AppBar(
-        title: Text("Drawer",
+        title: Text("Home",
             style: GoogleFonts.roboto(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -30,7 +32,20 @@ class _HomeState extends State<Home> {
                       : Defaults.standard = Defaults.before;
                 });
               },
-              icon: Icon(Icons.favorite, color: Defaults.standard))
+              icon: Icon(Icons.favorite, color: Defaults.standard)),
+          IconButton(
+              onPressed: () {
+                setState(() {
+                  Navigator.pushNamed(context, "/settings");
+                });
+              },
+              icon: Icon(
+                Icons.settings,
+                color: Defaults.before,
+              )),
+          SizedBox(
+            width: 10,
+          ),
         ],
       ),
       drawer: Drawer(
@@ -111,7 +126,6 @@ class _HomeState extends State<Home> {
                     child: ListTile(
                       onTap: () {
                         Navigator.pushNamed(context, "/profile");
-                        Navigator.pop(context);
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[1],
@@ -132,7 +146,6 @@ class _HomeState extends State<Home> {
                     child: ListTile(
                       onTap: () {
                         Navigator.pushNamed(context, "/messeges");
-                        Navigator.pop(context);
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[2],
@@ -153,7 +166,6 @@ class _HomeState extends State<Home> {
                     child: ListTile(
                       onTap: () {
                         Navigator.pushNamed(context, "/buy_sell");
-                        Navigator.pop(context);
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[3],
@@ -174,7 +186,6 @@ class _HomeState extends State<Home> {
                     child: ListTile(
                       onTap: () {
                         Navigator.pushNamed(context, "/contacts");
-                        Navigator.pop(context);
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[4],
@@ -195,7 +206,6 @@ class _HomeState extends State<Home> {
                     child: ListTile(
                       onTap: () {
                         Navigator.pushNamed(context, "/settings");
-                        Navigator.pop(context);
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[5],
@@ -236,6 +246,7 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
+      body: Map(),
     );
   }
 }
