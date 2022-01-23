@@ -2,10 +2,11 @@
 
 import 'package:drawer_flutter/Welcome/back.dart';
 import 'package:drawer_flutter/Login_Page/body.dart';
+import 'package:drawer_flutter/Register_Page/body.dart';
 import "package:flutter/material.dart";
 import 'package:flutter_svg/flutter_svg.dart';
-import "package:drawer_flutter/register.dart";
-import "package:drawer_flutter/login.dart";
+// import "package:drawer_flutter/register.dart";
+// import "package:drawer_flutter/login.dart";
 // import 'package:google_fonts/google_fonts.dart';
 // import 'package:flutter_svg/svg.dart';
 
@@ -69,7 +70,7 @@ class Display extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return Register();
+                          return Body_2();
                         },
                       ),
                     );

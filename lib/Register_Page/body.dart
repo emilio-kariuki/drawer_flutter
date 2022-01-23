@@ -1,31 +1,42 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:drawer_flutter/Home.dart';
 import 'package:flutter/material.dart';
-import "package:drawer_flutter/Welcome/back.dart";
+
+// import 'package:flutter_auth/Screens/Signup/components/background.dart';
+// import 'package:flutter_auth/Screens/Signup/components/or_divider.dart';
+// import 'package:flutter_auth/Screens/Signup/components/social_icon.dart';
+// import 'package:flutter_auth/components/already_have_an_account_acheck.dart';
+// import 'package:flutter_auth/components/rounded_button.dart';
+// import 'package:flutter_auth/components/rounded_input_field.dart';
+// import 'package:flutter_auth/components/rounded_password_field.dart';
+import 'package:drawer_flutter/Register_Page/background.dart';
+import 'package:drawer_flutter/Register_Page/divider.dart';
+import 'package:drawer_flutter/Register_Page/social.dart';
+import 'package:drawer_flutter/Home.dart';
 import 'package:flutter_svg/svg.dart';
-// import 'package:drawer_flutter/register.dart';
-// import "package:drawer_flutter/login.dart";
 
-
-class Body_1 extends StatelessWidget {
-  const Body_1({Key? key}) : super(key: key);
+// ignore: camel_case_types
+class Body_2 extends StatelessWidget {
+  const Body_2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      body: Background(
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              SizedBox(height: size.height * 0.03),
-              SvgPicture.asset(
-                "assets/images/icons/login.svg",
-                height: size.height * 0.35,
-              ),
-              SizedBox(height: size.height * 0.03),
+    return Background(
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "SIGNUP",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: size.height * 0.03),
+            SvgPicture.asset(
+              "assets/images/icons/signup.svg",
+              height: size.height * 0.35,
+            ),
+            SizedBox(height: size.height * 0.03),
               Padding(
                 padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
                 child: TextField(
@@ -81,8 +92,25 @@ class Body_1 extends StatelessWidget {
                 ),
               ),
               SizedBox(height: size.height * 0.03),
-            ],
-          ),
+            OrDivider(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                SocalIcon(
+                  iconSrc: "assets/icons/facebook.svg",
+                  press: () {},
+                ),
+                SocalIcon(
+                  iconSrc: "assets/icons/twitter.svg",
+                  press: () {},
+                ),
+                SocalIcon(
+                  iconSrc: "assets/icons/google-plus.svg",
+                  press: () {},
+                ),
+              ],
+            )
+          ],
         ),
       ),
     );

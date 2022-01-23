@@ -7,9 +7,8 @@ import 'sell.dart';
 import 'contacts.dart';
 import 'messages.dart';
 import 'settings.dart';
-import 'login.dart';
 import 'Welcome/display.dart';
-import 'register.dart';
+
 
 void main() {
   runApp(
@@ -25,8 +24,6 @@ void main() {
         "/contacts": (context) => Contacts(),
         "/settings": (context) => Settings(),
         "/home": (context) =>Home(),
-        "/register": (context) => Register(),
-        "/login": (context) => Login(),
       },
     ),
   );
