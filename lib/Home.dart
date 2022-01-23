@@ -109,6 +109,9 @@ class _HomeState extends State<Home> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     child: ListTile(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/profile");
+                      },
                       leading: Icon(
                         Defaults.drawerItemIcon[1],
                         color: Defaults.before,
@@ -126,6 +129,9 @@ class _HomeState extends State<Home> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     child: ListTile(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/messeges");
+                      },
                       leading: Icon(
                         Defaults.drawerItemIcon[2],
                         color: Defaults.before,
@@ -143,6 +149,9 @@ class _HomeState extends State<Home> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     child: ListTile(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/buy_sell");
+                      },
                       leading: Icon(
                         Defaults.drawerItemIcon[3],
                         color: Defaults.before,
@@ -160,6 +169,9 @@ class _HomeState extends State<Home> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     child: ListTile(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/contacts");
+                      },
                       leading: Icon(
                         Defaults.drawerItemIcon[4],
                         color: Defaults.before,
@@ -177,11 +189,31 @@ class _HomeState extends State<Home> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
                     child: ListTile(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/settings");
+                      },
                       leading: Icon(
                         Defaults.drawerItemIcon[5],
                         color: Defaults.before,
                       ),
                       title: Text(Defaults.drawerItemText[5],
+                          style: GoogleFonts.roboto(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          )),
+                    ),
+                  ),
+                  Card(
+                    color: Colors.green[300],
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
+                    child: ListTile(
+                      leading: Icon(
+                        Defaults.drawerItemIcon[6],
+                        color: Defaults.before,
+                      ),
+                      title: Text(Defaults.drawerItemText[6],
                           style: GoogleFonts.roboto(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,

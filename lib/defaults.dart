@@ -16,7 +16,8 @@ class Defaults {
     'Mesages',
     'Buy Or Sell',
     'Contacts',
-    'Logout',
+    'settings',
+    'Logout'
   ];
 
   static final drawerItemIcon = [
@@ -25,6 +26,7 @@ class Defaults {
     Icons.send,
     Icons.mail,
     Icons.delete,
+    Icons.settings,
     Icons.warning_rounded,
   ];
 }
