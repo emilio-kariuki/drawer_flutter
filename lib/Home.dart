@@ -111,6 +111,7 @@ class _HomeState extends State<Home> {
                     child: ListTile(
                       onTap: () {
                         Navigator.pushNamed(context, "/profile");
+                        Navigator.pop(context);
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[1],
@@ -131,6 +132,7 @@ class _HomeState extends State<Home> {
                     child: ListTile(
                       onTap: () {
                         Navigator.pushNamed(context, "/messeges");
+                        Navigator.pop(context);
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[2],
@@ -151,6 +153,7 @@ class _HomeState extends State<Home> {
                     child: ListTile(
                       onTap: () {
                         Navigator.pushNamed(context, "/buy_sell");
+                        Navigator.pop(context);
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[3],
@@ -171,6 +174,7 @@ class _HomeState extends State<Home> {
                     child: ListTile(
                       onTap: () {
                         Navigator.pushNamed(context, "/contacts");
+                        Navigator.pop(context);
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[4],
@@ -191,6 +195,7 @@ class _HomeState extends State<Home> {
                     child: ListTile(
                       onTap: () {
                         Navigator.pushNamed(context, "/settings");
+                        Navigator.pop(context);
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[5],
