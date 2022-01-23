@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_settings_screens/flutter_settings_screens.dart';
+// import 'package:flutter_settings_screens/flutter_settings_screens.dart';
 
 class Settings extends StatefulWidget {
   Settings({Key? key}) : super(key: key);
