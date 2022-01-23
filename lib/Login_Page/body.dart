@@ -75,7 +75,7 @@ class Body_1 extends StatelessWidget {
                         ),
                       );
                     },
-                      child: Text("SIGN UP", style : TextStyle(color: Colors.white)),
+                      child: Text("SIGN IN", style : TextStyle(color: Colors.white)),
                     ),
                   ),
                 ),

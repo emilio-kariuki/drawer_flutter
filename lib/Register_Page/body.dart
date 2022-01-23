@@ -22,95 +22,93 @@ class Body_2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Background(
-      child: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "SIGNUP",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: size.height * 0.03),
-            SvgPicture.asset(
-              "assets/images/icons/signup.svg",
-              height: size.height * 0.35,
-            ),
-            SizedBox(height: size.height * 0.03),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
-                child: TextField(
+    return Scaffold(
+      body: Background(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              SizedBox(height: size.height * 0.03),
+              SvgPicture.asset(
+                "assets/images/icons/signup.svg",
+                height: size.height * 0.35,
+              ),
+              SizedBox(height: size.height * 0.03),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+                  child: TextField(
+                      decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      filled: false,
+                      hintStyle: TextStyle(color: Colors.grey[800]),
+                      hintText: "email",
+                      fillColor: Colors.grey[200]),
+                  ),
+                ),
+                SizedBox(height: 10),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+                  child: TextField(
                     decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30.0),
                     ),
-                    filled: true,
+                    filled: false,
                     hintStyle: TextStyle(color: Colors.grey[800]),
-                    hintText: "email",
+                    hintText: "password",
                     fillColor: Colors.grey[200]),
-                ),
-              ),
-              SizedBox(height: 10),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
-                child: TextField(
-                  decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30.0),
                   ),
-                  filled: true,
-                  hintStyle: TextStyle(color: Colors.grey[800]),
-                  hintText: "password",
-                  fillColor: Colors.grey[200]),
                 ),
-              ),
-              SizedBox(height: 20),
-              Card(
-                color: Colors.purple[900],
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20)
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(80, 0, 80, 0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(40),
-                    child: FlatButton(
-                      color: Colors.purple[900],
-                      onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return Home();
-                          },
-                        ),
-                      );
-                    },
-                      child: Text("SIGN UP", style : TextStyle(color: Colors.white)),
+                SizedBox(height: 20),
+                Card(
+                  color: Colors.purple[900],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40)
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(80, 0, 80, 0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(40),
+                      child: FlatButton(
+                        color: Colors.purple[900],
+                        onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return Home();
+                            },
+                          ),
+                        );
+                      },
+                        child: Text("SIGN UP", style : TextStyle(color: Colors.white)),
+                      ),
                     ),
                   ),
                 ),
-              ),
-              SizedBox(height: size.height * 0.03),
-            OrDivider(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                SocalIcon(
-                  iconSrc: "assets/icons/facebook.svg",
-                  press: () {},
-                ),
-                SocalIcon(
-                  iconSrc: "assets/icons/twitter.svg",
-                  press: () {},
-                ),
-                SocalIcon(
-                  iconSrc: "assets/icons/google-plus.svg",
-                  press: () {},
-                ),
-              ],
-            )
-          ],
+                SizedBox(height: size.height * 0.03),
+              OrDivider(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  SocalIcon(
+                    iconSrc: "assets/images/icons/facebook.svg",
+                    press: () {},
+                  ),
+                  SocalIcon(
+                    iconSrc: "assets/images/icons/twitter.svg",
+                    press: () {},
+                  ),
+                  SocalIcon(
+                    iconSrc: "assets/images/icons/google-plus.svg",
+                    press: () {},
+                  ),
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
