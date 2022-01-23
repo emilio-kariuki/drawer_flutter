@@ -8,7 +8,7 @@ import 'contacts.dart';
 import 'messages.dart';
 import 'settings.dart';
 import 'login.dart';
-import 'back/display.dart';
+import 'Welcome/display.dart';
 import 'register.dart';
 
 void main() {

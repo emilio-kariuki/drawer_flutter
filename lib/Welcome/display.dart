@@ -1,11 +1,12 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:drawer_flutter/back/back.dart';
+import 'package:drawer_flutter/Welcome/back.dart';
+import 'package:drawer_flutter/Login_Page/body.dart';
 import "package:flutter/material.dart";
 import 'package:flutter_svg/flutter_svg.dart';
 import "package:drawer_flutter/register.dart";
 import "package:drawer_flutter/login.dart";
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 // import 'package:flutter_svg/svg.dart';
 
 class Display extends StatelessWidget {
@@ -42,12 +43,12 @@ class Display extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return Login();
+                          return Body_1();
                         },
                       ),
                     );
                   },
-                    child: Text("LOGIN"),
+                    child: Text("LOGIN", style : TextStyle(color: Colors.white)),
                   ),
                 ),
               ),
@@ -73,7 +74,7 @@ class Display extends StatelessWidget {
                       ),
                     );
                   },
-                    child: Text("REGISTER"),
+                    child: Text("SIGN UP", style : TextStyle(color: Colors.white)),
                   ),
                 ),
               ),

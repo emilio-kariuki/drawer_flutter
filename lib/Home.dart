@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
                       ),
                       CircleAvatar(
                         backgroundImage:
-                            AssetImage("assets/images/profile.jpg"),
+                            AssetImage("assets/profile.jpg"),
                         radius: 40,
                       ),
                       SizedBox(
@@ -165,7 +165,7 @@ class _HomeState extends State<Home> {
                         borderRadius: BorderRadius.circular(20)),
                     child: ListTile(
                       onTap: () {
-                        Navigator.pushNamed(context, "/buy_sell");
+                        Navigator.pushNamed(context, "/sell");
                       },
                       leading: Icon(
                         Defaults.drawerItemIcon[3],
