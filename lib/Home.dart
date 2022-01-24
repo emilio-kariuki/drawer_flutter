@@ -49,14 +49,14 @@ class _HomeState extends State<Home> {
         ],
       ),
       drawer: Drawer(
-        backgroundColor: Colors.blue[900],
+        backgroundColor: Colors.white60,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
               padding: const EdgeInsets.fromLTRB(5, 35, 5, 0),
               child: Card(
-                color: Colors.green[300],
+                color: Colors.purple[900],
                 elevation: 10,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
@@ -102,7 +102,7 @@ class _HomeState extends State<Home> {
                     color: Colors.grey,
                   ),
                   Card(
-                    color: Colors.green[300],
+                    color: Colors.purple[900],
                     elevation: 10,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -119,7 +119,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Card(
-                    color: Colors.green[300],
+                    color: Colors.purple[900],
                     elevation: 10,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -139,7 +139,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Card(
-                    color: Colors.green[300],
+                    color: Colors.purple[900],
                     elevation: 10,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -159,7 +159,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Card(
-                    color: Colors.green[300],
+                    color: Colors.purple[900],
                     elevation: 10,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -179,7 +179,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Card(
-                    color: Colors.green[300],
+                    color: Colors.purple[900],
                     elevation: 10,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -199,7 +199,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Card(
-                    color: Colors.green[300],
+                    color: Colors.purple[900],
                     elevation: 10,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -219,7 +219,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Card(
-                    color: Colors.green[300],
+                    color: Colors.purple[900],
                     elevation: 10,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
