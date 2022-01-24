@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
                       SizedBox(
                         height: 10,
                       ),
-                      Text("Emilio",
+                      Text("EcoVille",
                           style: GoogleFonts.roboto(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
